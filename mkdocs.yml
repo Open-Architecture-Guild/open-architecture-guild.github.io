@@ -1,6 +1,7 @@
 site_name: Open Architecture Guild
 site_description: Open-source enterprise architecture standards, capability maps, and frameworks.
 site_url: https://open-architecture-guild.github.io
+docs_dir: '.'
 
 theme:
   name: material
