@@ -1,0 +1,36 @@
+site_name: Open Architecture Guild
+site_description: Open-source enterprise architecture standards, capability maps, and frameworks.
+site_url: https://open-architecture-guild.github.io
+
+theme:
+  name: material
+  language: en
+  palette:
+    # Automatischer Schalter für Light/Dark Mode (wichtig für Entwickler/Architekten)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+nav:
+  - Home: README.md
