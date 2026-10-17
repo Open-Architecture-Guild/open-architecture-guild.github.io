@@ -20,7 +20,7 @@ Jede Seite hat unten einen Link „Diese Seite auf GitHub bearbeiten“; auf der
 
 *Settings → Pages → Source* muss auf **Deploy from a branch** stehen (Branch `main`, Ordner `/ (root)`). Steht sie auf „GitHub Actions“, wird nichts veröffentlicht, weil es keinen Workflow mehr gibt. Eine Datei `.nojekyll` darf es nicht geben.
 
-Das Theme-Repo muss öffentlich sein. Die Version steht in `_config.yml` bei `remote_theme` (aktuell `@v0.1.0`). Für ein Theme-Update im Theme-Repo einen neuen Tag setzen und hier eintragen.
+Das Theme-Repo muss öffentlich sein. Die Version steht in `_config.yml` bei `remote_theme` (aktuell `@v0.2.0`). Für ein Theme-Update im Theme-Repo einen neuen Tag setzen und hier eintragen.
 
 ## Lokal ansehen
 
@@ -35,15 +35,15 @@ Dann `http://localhost:4000` öffnen. Zum Ändern des Themes ohne Veröffentlich
 
 ## Vor dem Go-live
 
-1. `impressum.md` und `datenschutz.md` ausfüllen, rechtlich prüfen lassen und danach `noindex` und `sitemap: false` entfernen. Wer Anbieter der Seite ist, ist offen.
-2. `capabilities/index.md` ist ein Platzhalter. Sobald die Map dort gebaut wird, diese Datei löschen.
+1. `impressum.md` und `datenschutz.md` sind Entwürfe mit eckigen Klammern für fehlende Angaben. Ausfüllen, rechtlich prüfen lassen und danach `noindex` und `sitemap: false` entfernen. Wer Anbieter der Seite ist, ist offen.
+2. `capabilities/index.md` ist eine Einführung. Sobald die Map dort gebaut wird, ersetzt sie diese Datei.
 3. Das Band „Stand des Katalogs“ zeigt einen Hinweistext. Zahlen aus dem Katalog-Build gibt es noch nicht.
 4. Reifegrade und offene Entscheidungen in `_data/home.yml` bei Änderungen am Stand aktualisieren.
-5. Die Aussage „setzt keine Cookies und lädt nichts von Dritten“ stimmt nur, solange das Theme keine Schriften oder Skripte von Dritten einbindet.
+5. Die Aussage „setzt keine Cookies und lädt nichts von Dritten“ stimmt nur, solange das Theme keine Schriften oder Skripte von Dritten einbindet. Die Schriften liegen seit Theme 0.2 im Theme selbst.
 
 ## Nicht enthalten
 
-Englische Fassung, Wissens- und Governance-Seiten, Suche, Kennzahlen aus dem Katalog-Build (Roadmap W2 bis W4). Für den Build der Map nach `/capabilities/` braucht es später eine eigene Action oder das Einchecken der gebauten Dateien; der Branch-Build von GitHub führt kein Node aus.
+Englische Fassung, Wissensseiten, Suche, Kennzahlen aus dem Katalog-Build (Roadmap W2 bis W4). Für den Build der Map nach `/capabilities/` braucht es später eine eigene Action oder das Einchecken der gebauten Dateien; der Branch-Build von GitHub führt kein Node aus.
 
 ## Lizenz
 
