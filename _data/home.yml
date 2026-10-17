@@ -6,7 +6,7 @@ hero:
   intro: "Die Open Architecture Guild ist eine offene Gemeinschaft von Architekturpraktikern. Wir bauen frei nutzbare Referenzmodelle, zuerst eine Capability Map. Sie sind herstellerneutral, in eigenen Worten geschrieben und an bekannte Methoden angelehnt."
   buttons:
     - {title: "Capability Map ansehen", url: "/capabilities/", style: primary}
-    - {title: "Mitmachen", url: "#mitmachen", style: secondary}
+    - {title: "Mitmachen", url: "/contribute/", style: secondary}
 
 preview:
   label: "Vorschau der Capability Map mit erfundenen Beispieldaten"
@@ -46,7 +46,7 @@ entries:
     title: "Mitmachen"
     text: "Vom Fehler melden in zwei Minuten bis zur Rolle als Curator. Ohne Git-Vorkenntnisse möglich."
     link_title: "Wege zum Mitmachen"
-    url: "#mitmachen"
+    url: "/contribute/"
 
 status:
   title: "Stand des Katalogs"
@@ -55,6 +55,8 @@ status:
 projects:
   title: "Projekte"
   lede: "Jedes Projekt zeigt offen, wie weit es ist. Neue Ideen beginnen als Diskussion und werden nach einem Beschluss des Councils zum Projekt."
+  all_title: "Alle Projekte und der Weg zu einem neuen Projekt"
+  all_url: "/projects/"
   repo_label: "Repo"
   license_label: "Lizenz"
   items:
@@ -120,6 +122,8 @@ participate:
 decisions:
   title: "Was gerade entschieden wird"
   lede: "Offene Fragen stehen hier mit Empfehlung zur Diskussion. Wer mitreden will, tut das in den Discussions."
+  all_title: "Alle Entscheidungen und die Roadmap"
+  all_url: "/governance/"
   open_label: "offen"
   link_title: "Mitreden"
   items:

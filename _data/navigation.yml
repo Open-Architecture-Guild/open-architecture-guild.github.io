@@ -1,7 +1,8 @@
 label: "Hauptnavigation"
 main:
-  - {title: "Projekte", url: "/#projekte"}
-  - {title: "Mitmachen", url: "/#mitmachen"}
-  - {title: "Entscheidungen", url: "/#entscheidungen"}
-  - {title: "Discussions", url: "https://github.com/orgs/Open-Architecture-Guild/discussions"}
+  - {title: "Über uns", url: "/about/"}
+  - {title: "Capability Map", url: "/capabilities/"}
+  - {title: "Projekte", url: "/projects/"}
+  - {title: "Mitmachen", url: "/contribute/"}
+  - {title: "Governance", url: "/governance/"}
   - {title: "GitHub", url: "https://github.com/Open-Architecture-Guild", button: true}

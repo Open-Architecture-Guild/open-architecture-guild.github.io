@@ -5,8 +5,10 @@ columns:
       - {title: "GitHub-Organisation", url: "https://github.com/Open-Architecture-Guild"}
       - {title: "Capability-Katalog", url: "https://github.com/Open-Architecture-Guild/Capabilities"}
       - {title: "Discussions", url: "https://github.com/orgs/Open-Architecture-Guild/discussions"}
+      - {title: "Roadmap", url: "/roadmap/"}
   - title: "Rechtliches"
     links:
+      - {title: "Lizenz, Marken, Barrierefreiheit", url: "/legal/"}
       - {title: "Impressum", url: "/impressum/"}
       - {title: "Datenschutz", url: "/datenschutz/"}
       - {title: "Lizenz (MIT, vorläufig)", url: "https://github.com/Open-Architecture-Guild/.github/blob/main/profile/LICENSE.md"}
