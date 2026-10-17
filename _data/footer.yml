@@ -1,0 +1,14 @@
+about: "Offene Referenzmodelle für die Unternehmensarchitektur."
+columns:
+  - title: "Gilde"
+    links:
+      - {title: "GitHub-Organisation", url: "https://github.com/Open-Architecture-Guild"}
+      - {title: "Capability-Katalog", url: "https://github.com/Open-Architecture-Guild/Capabilities"}
+      - {title: "Discussions", url: "https://github.com/orgs/Open-Architecture-Guild/discussions"}
+  - title: "Rechtliches"
+    links:
+      - {title: "Impressum", url: "/impressum/"}
+      - {title: "Datenschutz", url: "/datenschutz/"}
+      - {title: "Lizenz (MIT, vorläufig)", url: "https://github.com/Open-Architecture-Guild/.github/blob/main/profile/LICENSE.md"}
+note: "Diese Seite setzt keine Cookies und lädt nichts von Dritten."
+edit_title: "Diese Seite auf GitHub bearbeiten"

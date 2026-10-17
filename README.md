@@ -1,56 +1,50 @@
-# Open Architecture Guild 🏛️
-*An open, community-driven initiative advancing enterprise architecture standards for global business and IT leaders.*
+# open-architecture-guild.github.io
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub Organization](https://img.shields.io/badge/GitHub-Open--Architecture--Guild-181717?logo=github)](https://github.com/Open-Architecture-Guild)
+Webseite der Open Architecture Guild: https://open-architecture-guild.github.io
 
----
+Jekyll-Seite, gebaut vom eingebauten GitHub-Pages-Build. Es gibt keinen Workflow und keine Anfragen an Dritte. Das Aussehen kommt aus dem Theme-Repo [`guild-theme`](https://github.com/Open-Architecture-Guild/guild-theme), die Inhalte stehen hier in `_data/` und in den Seiten.
 
-## About the Guild
+## Wo man was ändert
 
-The **Open Architecture Guild** is an open-source community of Enterprise Architects, Solutions Architects, Business Designers, and C-Level Executives. Our mission is to democratize, standardize, and accelerate enterprise architecture practices worldwide.
+| Was | Wo |
+|---|---|
+| Texte der Startseite (Projekte, Entscheidungen, Mitmachen …) | `_data/home.yml` |
+| Menü, Hinweisband, Fußzeile | `_data/navigation.yml`, `_data/notice.yml`, `_data/footer.yml` |
+| Titel, Beschreibung, Theme-Version | `_config.yml` |
+| Impressum, Datenschutz, weitere Textseiten | Markdown-Dateien mit `layout: page` |
+| Farben, Layout | im Repo `guild-theme` |
 
-In an era of rapid technological shift and business transformation, foundational EA assets—such as capability maps, domain reference architectures, and governance frameworks—should not be locked behind proprietary consulting paywalls or reinvented in isolation by every enterprise. 
+Jede Seite hat unten einen Link „Diese Seite auf GitHub bearbeiten“; auf der Startseite führt er zu `_data/home.yml`.
 
-We pool collective architectural intelligence to create vendor-agnostic, peer-reviewed, and production-ready standards for modern organizations.
+## Einstellungen im Repo
 
----
+*Settings → Pages → Source* muss auf **Deploy from a branch** stehen (Branch `main`, Ordner `/ (root)`). Steht sie auf „GitHub Actions“, wird nichts veröffentlicht, weil es keinen Workflow mehr gibt. Eine Datei `.nojekyll` darf es nicht geben.
 
-## Core Pillars & Initiatives
+Das Theme-Repo muss öffentlich sein. Die Version steht in `_config.yml` bei `remote_theme` (aktuell `@v0.1.0`). Für ein Theme-Update im Theme-Repo einen neuen Tag setzen und hier eintragen.
 
-The Guild develops open standards and reusable assets across several key architectural domains:
+## Lokal ansehen
 
----
+Braucht Ruby und Internetzugang (das Theme wird von GitHub geladen):
 
-## Guild Principles
+```
+bundle install
+bundle exec jekyll serve
+```
 
-1. **Vendor & Platform Agnostic**: All assets are decoupled from specific software vendors, clouds, or proprietary tools.
-2. **Practitioner-Led**: Built by active enterprise architects solving real-world corporate challenges.
-3. **Open & Transparent**: Developed publicly under permissive open-source licensing to encourage global adoption and adaptation.
-4. **Peer-Reviewed Quality**: Maintained through transparent pull request reviews and community governance standards.
+Dann `http://localhost:4000` öffnen. Zum Ändern des Themes ohne Veröffentlichung `_layouts/`, `_includes/` und `assets/` aus dem Theme-Repo hierher kopieren; lokale Dateien haben Vorrang. Vor dem Einchecken wieder entfernen und im Theme-Repo ändern.
 
----
+## Vor dem Go-live
 
-## Featured Repositories
+1. `impressum.md` und `datenschutz.md` ausfüllen, rechtlich prüfen lassen und danach `noindex` und `sitemap: false` entfernen. Wer Anbieter der Seite ist, ist offen.
+2. `capabilities/index.md` ist ein Platzhalter. Sobald die Map dort gebaut wird, diese Datei löschen.
+3. Das Band „Stand des Katalogs“ zeigt einen Hinweistext. Zahlen aus dem Katalog-Build gibt es noch nicht.
+4. Reifegrade und offene Entscheidungen in `_data/home.yml` bei Änderungen am Stand aktualisieren.
+5. Die Aussage „setzt keine Cookies und lädt nichts von Dritten“ stimmt nur, solange das Theme keine Schriften oder Skripte von Dritten einbindet.
 
-| Repository | Focus Area | Description |
-| :--- | :--- | :--- |
-| **[`capability-map`](https://github.com/Open-Architecture-Guild/capability-map)** | Business Architecture | An open, 3-tier business capability map engineered for architects and C-levels. |
-| **`governance-models`** *(Upcoming)* | Architecture Governance | Standardized decision-making frameworks, architecture board templates, and quality metrics. |
-| **`ea-as-code-templates`** *(Upcoming)* | Tooling & Schemas | Machine-readable YAML/JSON schemas for integration with enterprise architecture tools. |
+## Nicht enthalten
 
----
+Englische Fassung, Wissens- und Governance-Seiten, Suche, Kennzahlen aus dem Katalog-Build (Roadmap W2 bis W4). Für den Build der Map nach `/capabilities/` braucht es später eine eigene Action oder das Einchecken der gebauten Dateien; der Branch-Build von GitHub führt kein Node aus.
 
-## Getting Involved
+## Lizenz
 
-We welcome practicing architects, business strategists, and technology leaders across all industries!
-
-* **Explore the Work**: Browse our repositories to adopt or adapt Guild standards in your organization.
-* **Join the Discussion**: Open an issue or join architectural debates across our project repositories.
-* **Contribute**: Review our contribution guidelines within individual repositories and submit a Pull Request.
-
----
-
-## License & Intellectual Property
-
-All frameworks, models, and code published by the Open Architecture Guild are open-source and released under the [MIT License](LICENSE) unless stated otherwise.
+Vorläufig MIT wie die übrigen Repos der Organisation, bis ADR-0001 entschieden ist.
