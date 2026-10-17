@@ -1,0 +1,140 @@
+# Alle Texte der Startseite. Aufbau erklärt guild-theme/README.md.
+
+hero:
+  eyebrow: "Offen · herstellerneutral · in eigenen Worten"
+  title: "Offene Referenzmodelle für die Unternehmens&shy;architektur"
+  intro: "Die Open Architecture Guild ist eine offene Gemeinschaft von Architekturpraktikern. Wir bauen frei nutzbare Referenzmodelle, zuerst eine Capability Map. Sie sind herstellerneutral, in eigenen Worten geschrieben und an bekannte Methoden angelehnt."
+  buttons:
+    - {title: "Capability Map ansehen", url: "/capabilities/", style: primary}
+    - {title: "Mitmachen", url: "#mitmachen", style: secondary}
+
+preview:
+  label: "Vorschau der Capability Map mit erfundenen Beispieldaten"
+  title: "Capability Map"
+  query: "kunde"
+  note: "Vorschau mit erfundenen Beispieldaten, kein Vorschlag für die erste Ebene."
+  strata:
+    - name: "core"
+      tiles:
+        - {title: "Auftragserfassung"}
+        - {title: "Leistungs&shy;erbringung"}
+        - {title: "Kundenbetreuung", hit: true}
+        - {title: "Produkt&shy;entwicklung"}
+    - name: "management"
+      tiles:
+        - {title: "Strategieplanung"}
+        - {title: "Risikosteuerung"}
+        - {title: "Portfoliosteuerung"}
+    - name: "enabling"
+      tiles:
+        - {title: "Personalwesen"}
+        - {title: "Finanzbuchhaltung"}
+        - {title: "Informations&shy;management"}
+
+entries:
+  - icon: search
+    title: "Map ansehen"
+    text: "Capabilities suchen, in der Map navigieren, Definitionen lesen und die Quelldatei öffnen."
+    link_title: "Zur Capability Map"
+    url: "/capabilities/"
+  - icon: book
+    title: "Verstehen"
+    text: "Was ist eine Capability, und was nicht? Die Regeln des Katalogs stehen in dessen Dokumentation."
+    link_title: "Zur Katalog-Dokumentation"
+    url: "https://github.com/Open-Architecture-Guild/Capabilities#readme"
+  - icon: plus
+    title: "Mitmachen"
+    text: "Vom Fehler melden in zwei Minuten bis zur Rolle als Curator. Ohne Git-Vorkenntnisse möglich."
+    link_title: "Wege zum Mitmachen"
+    url: "#mitmachen"
+
+status:
+  title: "Stand des Katalogs"
+  text: "Im Aufbau. Version, Datenstand und Zahl der Einträge erscheinen hier, sobald der erste Release veröffentlicht ist."
+
+projects:
+  title: "Projekte"
+  lede: "Jedes Projekt zeigt offen, wie weit es ist. Neue Ideen beginnen als Diskussion und werden nach einem Beschluss des Councils zum Projekt."
+  repo_label: "Repo"
+  license_label: "Lizenz"
+  items:
+    - title: "Capability Map"
+      status: active
+      label: "aktiv"
+      text: "Offene Business Capability Map mit bis zu drei Ebenen, durchsuchbar im Browser."
+      repo: "Capabilities"
+      license: "MIT (vorläufig)"
+      link_title: "Zum Projekt"
+      url: "https://github.com/Open-Architecture-Guild/Capabilities"
+    - title: "KPI-Katalog"
+      status: draft
+      label: "Entwurf"
+      text: "Referenzdefinitionen für Kennzahlen, verknüpft mit Capabilities. Ohne Zielwerte und Messwerte."
+      repo: "geplant"
+      license: "MIT (vorläufig)"
+    - title: "governance-models"
+      status: idea
+      label: "Idee"
+      text: "Entscheidungsrahmen, Vorlagen für Architekturgremien und Qualitätskennzahlen."
+      repo: "geplant"
+      license: "offen"
+      link_title: "Idee diskutieren"
+      url: "https://github.com/orgs/Open-Architecture-Guild/discussions"
+    - title: "ea-as-code-templates"
+      status: idea
+      label: "Idee"
+      text: "Maschinenlesbare YAML- und JSON-Schemas für die Anbindung an Architekturwerkzeuge."
+      repo: "geplant"
+      license: "offen"
+      link_title: "Idee diskutieren"
+      url: "https://github.com/orgs/Open-Architecture-Guild/discussions"
+
+principles:
+  title: "Wofür die Gilde steht"
+  items:
+    - {title: "Herstellerneutral", text: "Alle Inhalte sind unabhängig von Softwareanbietern, Clouds und Werkzeugen."}
+    - {title: "Aus der Praxis", text: "Von Praktikern für Praktiker: Wir schreiben auf, was Architekten im Alltag brauchen."}
+    - {title: "Offen und nachvollziehbar", text: "Die Arbeit geschieht öffentlich, Entscheidungen sind mit Begründung nachlesbar."}
+    - {title: "Durch Review gesichert", text: "Änderungen laufen über öffentliche Pull Requests mit einer festen Checkliste."}
+
+participate:
+  title: "Mitmachen, auch ohne Git"
+  lede: "Wähle den Aufwand, der zu dir passt. Jeder Weg beginnt mit einem Formular oder einer Diskussion."
+  steps:
+    - {time: "2 Minuten", text: "Einen Fehler melden oder eine fehlende Capability vorschlagen."}
+    - {time: "30 Minuten", text: "Einen offenen Vorschlag prüfen oder eine Übersetzung gegenlesen."}
+    - {time: "Mehrere Stunden", text: "Die zweite Ebene für einen Fachbereich ausarbeiten oder an Werkzeugen mitbauen."}
+    - {time: "Dauerhaft", text: "Als Curator Änderungen prüfen oder im Council Entscheidungen mittragen."}
+  buttons:
+    - {title: "Capability vorschlagen", url: "https://github.com/Open-Architecture-Guild/Capabilities/issues/new/choose", style: primary}
+    - {title: "Diskussion starten", url: "https://github.com/orgs/Open-Architecture-Guild/discussions/new", style: secondary}
+  callout:
+    title: "Wichtig zu wissen"
+    text: "Jeder Beitrag trägt eine Signed-off-by-Zeile mit Name und E-Mail-Adresse. Issues, Pull Requests und diese Zeile bleiben öffentlich in der Historie."
+  pilot:
+    title: "Pilotanwender gesucht"
+    text: "Architekturteams, die die Map früh einsetzen und uns Rückmeldung geben."
+    button: "Pilotanwender werden"
+    url: "https://github.com/orgs/Open-Architecture-Guild/discussions/new"
+
+decisions:
+  title: "Was gerade entschieden wird"
+  lede: "Offene Fragen stehen hier mit Empfehlung zur Diskussion. Wer mitreden will, tut das in den Discussions."
+  open_label: "offen"
+  link_title: "Mitreden"
+  items:
+    - ref: "ADR-0001"
+      title: "Lizenz der Inhalte"
+      text: "MIT für alles, oder MIT für den Code und CC BY 4.0 beziehungsweise CC0 für den Katalog?"
+      url: "https://github.com/orgs/Open-Architecture-Guild/discussions"
+    - ref: "ADR-0002"
+      title: "Quellsprache des Katalogs"
+      text: "Englisch mit deutschen Übersetzungen, oder Deutsch zuerst?"
+      url: "https://github.com/orgs/Open-Architecture-Guild/discussions"
+    - title: "Startteam der Curators"
+      text: "Wer bildet das Team aus zwei bis vier Personen, das Änderungen am Katalog prüft?"
+      url: "https://github.com/orgs/Open-Architecture-Guild/discussions"
+
+disclaimer:
+  title: "Was wir nicht sind"
+  text: "Die Gilde ist keine Zertifizierungsstelle und weder mit The Open Group noch mit der Business Architecture Guild verbunden. TOGAF, ArchiMate und BIZBOK sind Marken ihrer Inhaber; wir nennen sie nur, um die fachliche Anlehnung zu beschreiben. Die Inhalte sind keine Rechtsberatung."
