@@ -2,4 +2,4 @@ enabled: true
 tag: "AUFBAUPHASE"
 text: "Der Katalog entsteht gerade. Inhalte können sich noch grundlegend ändern, für den produktiven Einsatz empfehlen wir sie noch nicht."
 link_title: "Stand und Reifegrad"
-link_url: "/#katalog-stand"
+link_url: "/about/#stand"
