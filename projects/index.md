@@ -5,6 +5,8 @@ lede: "Jedes Projekt zeigt offen, wie weit es ist. Neue Ideen beginnen als Disku
 status: Entwurf
 ---
 
+## Übersicht
+
 {% include project-cards.html %}
 
 ## Reifegrade {#reifegrade}

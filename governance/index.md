@@ -23,7 +23,7 @@ Für größere Änderungen ist eine Kommentierungsfrist von 14 Tagen als Startwe
 
 ## Wer entscheidet
 
-| Gremium | Aufgabe | Zusammensetzung |
+| Gremium | Aufgabe | Besetzung |
 |---|---|---|
 | Curators | Prüfen Änderungen am Katalog und halten die Regeln ein | zu Beginn 2 bis 4 Personen |
 | Council | Grundsatzentscheidungen, neue Projekte, Besetzung der Rollen | 3 bis 5 Personen, gestaffelte Amtszeiten |
