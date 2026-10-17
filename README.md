@@ -20,7 +20,7 @@ Jede Seite hat unten einen Link „Diese Seite auf GitHub bearbeiten“; auf der
 
 *Settings → Pages → Source* muss auf **Deploy from a branch** stehen (Branch `main`, Ordner `/ (root)`). Steht sie auf „GitHub Actions“, wird nichts veröffentlicht, weil es keinen Workflow mehr gibt. Eine Datei `.nojekyll` darf es nicht geben.
 
-Das Theme-Repo muss öffentlich sein. Die Version steht in `_config.yml` bei `remote_theme` (aktuell `@v0.2.0`). Für ein Theme-Update im Theme-Repo einen neuen Tag setzen und hier eintragen.
+Das Theme-Repo muss öffentlich sein. Die Version steht in `_config.yml` bei `remote_theme` (aktuell `@v0.2.1`). Für ein Theme-Update im Theme-Repo einen neuen Tag setzen und hier eintragen.
 
 ## Lokal ansehen
 
